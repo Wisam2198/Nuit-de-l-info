@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style_quiz.css">
+  <title>Quiz sur le changement climatique</title>
+</head>
+
+<body>
+
+  <h1>Quiz sur le changement climatique</h1>
+
+  <form id="quizForm">
+    <div class="question-form" id="resultQ1">
+      <p>Question 1 : La fonte des glaces est uniquement due au réchauffement climatique naturel ?</p>
+      <label>
+        <input type="radio" name="q1" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="q1" value="false"> Faux
+      </label>
+      <input type="text" id="reponse1" class="custom-textbox" readonly/>
+    </div>
+    <div class="question-form" id="resultQ2">
+      <p>Question 2 : Il est trop tard pour lutter contre le réchauffement climatique ?</p>
+      <label>
+        <input type="radio" name="q2" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="q2" value="false"> Faux
+      </label>
+      <input type="text" id="reponse2" class="custom-textbox" readonly/>
+    </div>
+    <div class="question-form" id="resultQ3">
+      <p>Question 3 : Les voitures électriques sont la solution ultime pour réduire les émissions de gaz à effet de serre ?</p>
+      <label>
+        <input type="radio" name="q3" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="q3" value="false"> Faux
+      </label>
+      <input type="text" id="reponse3" class="custom-textbox" readonly/>
+    </div>
+    <div class="question-form" id="resultQ4">
+      <p>Question 4 : Planter des arbres permettra de compenser toutes les émissions de gaz à effet de serre ?</p>
+      <label>
+        <input type="radio" name="q4" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="q4" value="false"> Faux
+      </label>
+      <input type="text" id="reponse4" class="custom-textbox" readonly/>
+    </div>
+
+    <button type="button" onclick="validateQuiz()">Valider</button>
+
+    <button type="button" id="showResultButton" style="display:none" onclick="window.location.href = 'main.ejs'">En savoir plus</button>
+  </form>
+
+  <script>
+    function validateQuiz() {
+      let q1 = document.querySelector('input[name="q1"]:checked');
+      let q2 = document.querySelector('input[name="q2"]:checked');
+      let q3 = document.querySelector('input[name="q3"]:checked');
+      let q4 = document.querySelector('input[name="q4"]:checked');
+
+      let reponse1 = document.getElementById('reponse1');
+      let reponse2 = document.getElementById('reponse2');
+      let reponse3 = document.getElementById('reponse3');
+      let reponse4 = document.getElementById('reponse4');
+
+      if (!q1 || !q2 || !q3 || !q4) {
+        alert("Veuillez cocher toutes les réponses");
+      } else {
+        reponse1.value = q1.value === "false" ? "Bonne réponse" : "Mauvaise réponse";
+        reponse2.value = q2.value === "false" ? "Bonne réponse" : "Mauvaise réponse";
+        reponse3.value = q3.value === "false" ? "Bonne réponse" : "Mauvaise réponse";
+        reponse4.value = q4.value === "false" ? "Bonne réponse" : "Mauvaise réponse";
+
+                // Afficher le bouton après validation
+                showResultButton.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

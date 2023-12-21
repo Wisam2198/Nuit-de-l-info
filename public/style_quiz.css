@@ -1,0 +1,69 @@
+/* style_quiz.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #42455a; /* Arrière-plan gris */
+    color: #ffffff; /* Couleur du texte en blanc */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00c2cb; /* Couleur du titre */
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .question-form {
+    margin-bottom: 20px;
+  }
+  
+  .question-form p {
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #00c2cb; /* Couleur du bouton */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #008080; /* Couleur du bouton au survol */
+  }
+  .result-question {
+    margin-bottom: 20px;
+    border: 1px solid #00c2cb;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  /* Style pour les zones de texte personnalisées */
+.custom-textbox {
+  width: 200px; /* Modifiez la largeur selon vos préférences */
+  height: 20px;
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc; /* Bordure grise */
+  border-radius: 4px; /* Coins arrondis */
+  box-sizing: border-box; /* Inclure la bordure et le remplissage dans la largeur/hauteur totale */
+  /* Ajoutez d'autres styles selon vos préférences */
+}

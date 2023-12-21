@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Modern Tetris';
+    src: url('/font/modern-tetris.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 75%;
+    margin: 0;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+#block {
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligner le texte à gauche */
+}
+
+h1 {
+    font-family: 'Modern Tetris';
+    margin: 0;
+    background: linear-gradient(90deg, #ff7e00, #ff7e00 16.66%, #ffd300 16.66%, #ffd300 33.33%, #008e00 33.33%, #008e00 50%, #00a4ff 50%, #00a4ff 66.66%, #9900e6 66.66%, #9900e6 83.33%, #ff4d4d 83.33%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#t_404 {
+    font-size: 5.8em;
+}
+
+#t_slamty {
+    font-size: 2.6em;
+}
+
+#t_tetris {
+    font-size: 3em;
+    margin-top: 10px; /* Ajustement de la marge pour le centrage vertical */
+}
+
+#score_and_nextblock {
+    text-align: right;
+    position: absolute; /* Utiliser la position absolue */
+    /*margin-right: 15%;*/
+    right: 15%; /* Aligner à droite */
+    top: 20%;
+}
+
+h2{
+    background: linear-gradient(90deg, #ff7e00, #ff7e00 16.66%, #ffd300 16.66%, #ffd300 33.33%, #008e00 33.33%, #008e00 50%, #00a4ff 50%, #00a4ff 66.66%, #9900e6 66.66%, #9900e6 83.33%, #ff4d4d 83.33%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#t_score {
+    font-size: 2em;
+    margin: 0;
+}
+

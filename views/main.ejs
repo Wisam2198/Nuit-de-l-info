@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informations sur le changement climatique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" type="text/css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <section>
+    <h1>Idées reçues sur le réchauffement climatique &#8595;</h1>
+    <a href="ubisoft.ejs"><img src="/img/ubisoft/ubilogo.png" alt="ubilogo" height="60" width="60"></a>
+    
+  </section>
+  <section>
+    <div class="container reveal fade-bottom">
+      <h2>La fonte des glaces est uniquement due au réchauffement climatique naturel.</h2>
+      <div class="deconstruction">
+        <p>Certains affirment que la fonte des glaces
+          observée dans les régions polaires est principalement
+          causée par des cycles naturels de réchauffement de la Terre
+          et non par les activités humaines. Pourtant selon Le Groupe
+          intergouvernemental d'experts sur l'évolution du climat (GIEC),
+          les activités humaines représentent la cause principale du
+          réchauffement de la planète depuis 1950 avec une probabilité
+          d'au moins 95 %. La calotte de glace du Groenland a perdu en moyenne
+          34 Gt par an entre 1992 et 2001. Ce taux est depuis passé à 215 Gt de perte
+          par an entre 1993 et 2009.
+        </p>
+      </div>
+      <div class="text-container">
+        <div class="text-box">
+          <h3>Évolution de la fonte de la banquise de 1984 à 2018</h3>
+          <img src="/img/glacier.gif" alt="gif glacier">
+        </div>
+        <div class="text-box">
+          <h3>Solution</h3>
+          <ul>
+            <li>
+              Le principal levier d’action pour un phénomène global
+              se joue au niveau international. Gouvernements et industries
+              doivent prendre leurs responsabilités et agir conformément
+              aux préconisations du GIEC avec notamment le maintien des
+              températures sous 1,5-2°C.
+            </li>
+            <br>
+            <li>
+              A titre individuel, nous
+              pouvons poursuivre nos engagements et nos “petits”
+              gestes du quotidien en adoptant une consommation d’énergie
+              consciente et respectueuse, en ayant le souci de nos déchets,
+              de notre alimentation, de nos transports, etc.
+            </li>
+            <li>
+                Source : <a href="https://www.lemonde.fr/planete/article/2014/08/15/l-homme-est-le-principal-responsable-de-la-fonte-des-glaciers-depuis-1990_4471964_3244.html#:~:text=D'apr%C3%A8s%20ces%20travaux%2C%20le,climatiques%20naturelles%20%C3%A9tait%20pr%C3%A9pond%C3%A9rant%20auparavant." target="_blank">Le Monde</a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container reveal fade-bottom">
+      <h2>Il est trop tard pour lutter contre le réchauffement climatique
+      </h2>
+      <div class="deconstruction">
+        <p> Cette idée fataliste peut décourager l'action
+          et la mobilisation face à l'urgence climatique.
+          Bien que des dommages importants soient déjà visibles,
+          il est crucial de comprendre que chaque effort
+          compte pour limiter les effets néfastes futurs
+          du changement climatique.
+
+        </p>
+      </div>
+      <div class="text-container">
+
+        <div class="text-box">
+          <h3>Solution</h3>
+
+          <p>
+            Il n'y a pas de solutions magiques.
+            Selon Le climatologue Michael E. Mann le vote
+            populaire ainsi que la pression sont la voie du
+            changement. Il dit qu'éviter chaque 0,1°C d'augmentation
+            de la température mondiale compte beaucoup.
+            Il n'est jamais trop tard pour agir. Chaque action, qu'elle
+            soit petite ou grande, contribue à la lutte contre le changement climatique.
+          </p>
+          <br>
+          <br>
+          <h3>Quelques conseils au quotidien</h3>
+          <br>
+
+          <ul>
+            <li>Se déplacer autrement</li>
+            <li>Laver à basse ou moyenne température</li>
+            <li>Arrêter de céder aux injonctions de la mode</li>
+            <li>Réduire la consommation d’eau</li>
+            <li>Manger local</li>
+            <li>Privilégier les aliments de saison</li>
+            <li>Consommer moins de viande, d’œufs et de produits laitiers</li>
+            <li>Source : <a href="https://www.greenpeace.fr/cop23-gestes-proteger-planete-quotidien/" target="_blank">Green Peace</a></li>
+          </ul>
+
+        </div>
+        <div class="text-box">
+          <h3>Des efforts simples, qui font la différence ...</h3>
+          <img src="/img/conseils.gif" alt="gif conseils">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container reveal fade-bottom">
+      <h2>LES VOITURES ÉLECTRIQUES SONT LA SOLUTION ULTIME POUR RÉDUIRE LES ÉMISSIONS DE GAZ À EFFET DE SERRE.</h2>
+      <div class="deconstruction">
+        <p> Les voitures électriques
+          produisent moins d'émissions directes, mais leur empreinte carbone
+          totale dépend de la manière dont l'électricité est produite.
+          Si celle-ci provient principalement de sources fossiles, l'avantage
+          environnemental est limité.
+        </p>
+      </div>
+
+      <div class="text-container">
+        <div class="text-box-chart">360
+          <h3>Graphique </h3>
+          <div class="chart-container">
+            <!-- Graphique à barres -->
+            <canvas id="electricVsGasChart" width="800" height="400"></canvas>
+          </div>
+        </div>
+        <div class="text-box">
+          <h3>Solutions</h3>
+          
+          <p>
+            Encourager l'adoption de voitures électriques tout en plaidant
+            pour une transition vers des sources d'énergie renouvelable pour
+            alimenter les véhicules électriques.
+          </p>
+            <br>
+            <br>
+          <h3>Changer ses habitudes </h3>
+          
+          <br>
+          
+          <ul>
+            <li>
+              Se déplacer à pied
+            </li>
+            <li>
+              Utiliser les transports en commun
+            </li>
+            <li>
+              Limiter les trajets en véhicule aux longues distances
+            </li>
+            <li>
+              Favoriser l'usage du vélo
+              
+            </li>
+            <li>
+                Source : <a href="https://www.audi.fr/fr/web/fr/article/cout-ecologique-fabrication-vehicule-electrique.html" target="_blank">Audi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-4">
+    <div class="container reveal fade-bottom">
+      <h2>Planter des arbres permettra de compenser toutes les émissions de gaz à effet de serre.</h2>
+     <div class="deconstruction">
+     <p>
+      Bien que les arbres absorbent le CO2, ils ne peuvent 
+      pas compenser totalement les émissions humaines.
+       La préservation des forêts existantes et la réduction
+        des émissions restent essentielles.
+     </p>
+    </div>
+
+      <div class="text-container">
+
+        <div class="text-box">
+
+          <h3>La déforestation est le principal problème</h3>
+          <br>
+          <br>
+          <img src="/img/deforestation.jpg" alt="img deforestation">
+        </div>
+
+        <div class="text-box">
+          <h3>Solutions</h3>
+          <br>
+          
+          <h4>Pour sensibiliser à la reforestation</h4>
+          <br>
+          <ul>
+            <li>Encourager la plantation d'arbres dans les communautés locales.</li>
+            <li>Organiser des campagnes de sensibilisation sur l'importance des forêts pour l'écosystème.</li>
+            <li>Collaborer avec des organisations de conservation pour des projets de reboisement.</li>
+            <li>Éduquer les générations futures sur l'importance de préserver les forêts.</li>
+          </ul>
+          <br>
+          
+          <h4>Importance de réduire les émissions de manière significative</h4>
+          <br>
+          <ul>
+            <li>Transition vers des énergies renouvelables comme le solaire et l'éolien.</li>
+            <li>Encourager l'adoption de véhicules électriques et l'utilisation des transports en commun.</li>
+            <li>Promouvoir des pratiques agricoles durables pour réduire l'empreinte carbone.</li>
+            <li>Soutenir la recherche et le développement de technologies vertes.</li>
+            <li>Source : <a href="https://www.wwf.fr/champs-daction/alimentation/deforestation#:~:text=La%20d%C3%A9forestation%2C%20c'est%20la,r%C3%A9duction%20importante%20du%20couvert%20forestier." target="_blank">WWF</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="/script.js"></script>
+
+
+</body>
+
+</html>
